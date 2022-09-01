@@ -1,0 +1,150 @@
+.attribution { 
+    position: relative;
+    bottom: 0px;
+    font-size: 11px; 
+    text-align: center; 
+    
+    
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30,38%,72%);
+    font-size: 14px;
+    height: 100vh;
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+main{
+    width: 100%;
+}
+.container{
+    display: flex;
+    background-color: white;
+    width: 40%;
+    margin: 0 auto;
+    min-width: 600px;
+    border-radius: 10px;
+}
+.image-container{
+    width: 50%;
+    background-image: url(images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    
+
+
+}
+
+.text{
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 20px;
+    border-radius: 0px 10px 10px 0px;
+    width: 50%;
+}
+
+.card-heading{
+    letter-spacing: 0.5em;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+}
+.card-title{
+    line-height: 1.0;
+    font-weight: 700;
+    font-family: Fraunces, sans-serif;
+    font-size: 35px;
+   
+    
+}
+.card-lead{
+    line-height: 1.5;
+    color: hsl(228, 12%, 48%);
+    width: 90%;
+    font-size: 14px;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    justify-items: flex-start;
+}
+#old-price{
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+.current-price{
+    font-family: Fraunces, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+}
+button{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color:hsl(158, 36%, 37%) ;
+    padding: 20px 0;
+    color: white;
+    font-weight: 700;
+
+}
+button img{
+    margin-right: 5px;
+}
+
+button:hover{
+    background-color: hsl(158, 32%, 10%);
+}
+
+@media screen and (max-width: 500px){
+    main{
+        height: 100%;
+        margin-top: 50px;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        min-width: auto;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        
+        
+    }
+
+    .image-container{
+        width: 100%;
+        background-image: url(images/image-product-mobile.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        border-radius: 10px 10px 0 0;
+    }
+    .text{
+        width: 100%;
+        
+    }
+}
+    
