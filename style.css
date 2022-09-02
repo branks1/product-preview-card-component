@@ -45,10 +45,7 @@ main{
     background-position: center;
     background-size: cover;
     border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    
-
-
+    border-top-left-radius: 11px;
 }
 
 .text{
@@ -120,16 +117,17 @@ button:hover{
 @media screen and (max-width: 500px){
     main{
         height: 100%;
-        margin-top: 50px;
+        margin-top: 15px ;
     }
-    
+  
     .container{
         display: flex;
         flex-direction: column;
         width: 90%;
         min-width: auto;
         border-radius: 10px;
-        margin-bottom: 50px;
+        margin-top: 20px;
+        height:90vh;
         
         
     }
@@ -143,8 +141,15 @@ button:hover{
         border-radius: 10px 10px 0 0;
     }
     .text{
+        padding: 20px;
         width: 100%;
         
+      
+        
+    }
+    button img{
+        margin-right: 10px;
+       
     }
 }
     
